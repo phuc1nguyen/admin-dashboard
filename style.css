@@ -4,3 +4,28 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  padding: 20px;
+}
+
+.nav-heading {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 10px;
+}
+
+.sidebar .nav-heading img {
+  justify-self: end;
+  width: 50px;
+}
