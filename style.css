@@ -8,19 +8,32 @@ ul {
   list-style: none;
 }
 
+input, button {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
 
 .container {
+  height: 100vh;
   display: grid;
   grid-template-columns: 1fr 4fr;
   padding: 20px;
 }
 
+.nav-item img {
+  width: 40px;
+}
+
 .nav-heading {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 5fr;
   align-items: center;
   gap: 10px;
 }
