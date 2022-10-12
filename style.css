@@ -40,17 +40,15 @@ header {
   grid-row: 1 / 3;
   display: grid;
   grid-template-rows: auto repeat(3, 1fr);
-  align-items: center;
   row-gap: 20px;
   background-color: var(--primary-color);
   color: var(--primary-white);
 }
 
 .nav-heading {
-  display: grid;
-  grid-template-columns: 1fr 5fr;
+  display: flex;
   align-items: center;
-  column-gap: 10px;
+  column-gap: 20px;
   font-size: 1.5rem;
 }
 
@@ -59,10 +57,16 @@ header {
   align-items: center;
   column-gap: 10px;
   margin: 10px 0;
-  padding: 5px 0;
+  padding: 10px;
   font-size: 1.25rem;
   border-radius: 10px;
   cursor: pointer;
+}
+
+.nav-item:hover {
+  background-color: #5901a1;
+  transform: scale(1.1);
+  transition: ease-in-out .3s;
 }
 
 .nav-item img {
