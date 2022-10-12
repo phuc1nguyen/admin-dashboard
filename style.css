@@ -19,6 +19,12 @@ input, button {
 
 button {
   cursor: pointer;
+  background-color: var(--primary-color);
+  color: var(--primary-white);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  min-width: 80px;
 }
 
 a {
@@ -34,6 +40,77 @@ body {
 
 header {
   grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 30px 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .4);
+}
+
+.header-left,
+.header-right {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.header-upper-left {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.header-upper-left svg {
+  cursor: pointer;
+}
+
+.header-upper-left input {
+  width: 80%;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #cbd5e1;
+  font-size: 1rem;
+}
+
+.header-lower-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-lower-left p {
+  font-weight: bold;
+}
+
+.header-lower-left img {
+  border-radius: 50%;
+}
+
+.header-upper-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.header-upper-right svg {
+  cursor: pointer;
+}
+
+.header-upper-right p {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.header-upper-right img {
+  border-radius: 50%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
 }
 
 .sidebar {
@@ -90,7 +167,7 @@ header {
 
 
 
-
+/* Utilities */
 .p-3 {
   padding: 30px;
 }
